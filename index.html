@@ -10,6 +10,10 @@
     }
     .header{
       border-bottom:2px solid #2a2f36; padding-bottom:12px; margin-bottom:20px;
+      display:flex; align-items:center; gap:16px;
+    }
+    .header img{
+      width:100px; height:100px; object-fit:cover; border:2px solid #ff3c3c; border-radius:6px;
     }
     h1{margin:0; font-size:26px; letter-spacing:1px;}
     .badge{
@@ -23,14 +27,11 @@
       display:flex; gap:16px; align-items:center;
     }
     .pfp{
-      width:120px; height:120px; background:#222831; border:2px solid #ff3c3c; border-radius:4px; position:relative;
-      display:flex; align-items:center; justify-content:center; font-size:22px; color:#6c747c;
+      width:120px; height:120px; border:2px solid #ff3c3c; border-radius:6px; overflow:hidden;
+      flex-shrink:0;
     }
     .pfp img{
-      width:100%; height:100%; object-fit:cover; border-radius:4px;
-    }
-    .pfp:after{
-      content:"X"; position:absolute; color:#ff3c3c; font-size:56px; font-weight:bold; opacity:0.85;
+      width:100%; height:100%; object-fit:cover;
     }
     .label{text-transform:uppercase; font-size:13px; color:#889099; margin-bottom:4px;}
     .value{font-size:15px; margin-bottom:8px;}
@@ -46,16 +47,16 @@
   </style>
 </head>
 <body>
+
   <div class="header">
-    <h1>CASE FILE: J. J. G. B.</h1>
-    <div class="badge">Classification: Fictional Target — Training Use Only</div>
+    <img src="jeff.png" alt="Jumping Jeffalino Gazino Bino">
+    <div>
+      <h1>CASE FILE: J. J. G. B.</h1>
+      <div class="badge">Classification: Fictional Target — Training Use Only</div>
+    </div>
   </div>
 
   <div class="card profile">
-    <div class="pfp">
-      <!-- Insert character image here -->
-      <img src="jeff.png" alt="Jumping Jeffalino Gazino Bino">
-    </div>
     <div>
       <div class="label">Name</div>
       <div class="value"><strong>Jumping Jeffalino Gazino Bino</strong></div>
